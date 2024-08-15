@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Irshad VP - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background: #f7f7f7;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #3498db, #2ecc71);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px #2980b9;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px #27ae60;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.7rem;
+            margin-bottom: 25px;
+            color: #333;
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #3498db;
+            margin: 15px auto 0;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .skills ul li {
+            background: #2ecc71;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin: 10px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .skills ul li:hover {
+            transform: translateY(-10px);
+            background-color: #27ae60;
+        }
+
+        /* Projects Section */
+        .projects ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .projects ul li {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .projects ul li:hover {
+            transform: scale(1.05);
+        }
+
+        .projects ul li a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+
+        .projects ul li a:hover {
+            color: #2980b9;
+        }
+
+        /* Contact Form Section */
+        .contact-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 80%;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            padding: 12px 30px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #2ecc71;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        footer p a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer p a:hover {
+            text-decoration: underline;
+        }
+
+        footer .social-links a {
+            color: white;
+            margin: 0 15px;
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer .social-links a:hover {
+            color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Muhammed Irshad VP</h1>
+    <p>Flutter Developer | Full-Stack Developer</p>
+</header>
+
+<div class="container">
+    <!-- About Me Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Motivated Flutter Developer with expertise in state management, Dart, UI/UX design, REST API integration, Firebase, and Node.js. I have completed multiple cross-platform projects, holding an MCA degree and excelling in problem-solving. Eager to contribute to dynamic teams and grow as a developer.</p>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> +91 9072130225</p>
+        <p><strong>Email:</strong> <a href="mailto:irshadvp800@gmail.com">irshadvp800@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/muhammed-irshad-vp-0a9648247" target="_blank">Muhammed Irshad on LinkedIn</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/irshad800" target="_blank">irshad800 on GitHub</a></p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Dart</li>
+            <li>Flutter</li>
+            <li>Node.js</li>
+            <li>Firebase</li>
+            <li>REST API</li>
+            <li>Provider & BLoC</li>
+            <li>MongoDB</li>
+            <li>SQL & SQLite</li>
+            <li>JavaScript</li>
+            <li>MVVM & MVC Architecture</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Optical Store Management System:</strong> A full-stack app built using Flutter, MongoDB, and Node.js. It manages prescriptions and products for users and staff.
+                <a href="https://github.com/irshad800/optical-store-management" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                <strong>Ayurvedic Patient Management App:</strong> A Flutter-based app for managing patients and treatments, with API integration and PDF generation of patient details.
+                <a href="https://github.com/irshad800/ayurvedic-patient-management" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                <strong>Shoe-Selling eCommerce App:</strong> A Flutter app using MVVM architecture for user and staff functionalities, including product browsing, cart management, and order processing.
+                <a href="https://github.com/irshad800/shoe-selling-app" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                <strong>Offline Alarm App:</strong> A Flutter app with location-based weather updates and local notifications, featuring offline functionality and data persistence with SQfLite.
+                <a href="https://github.com/irshad800/offline-alarm-app" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                <strong>Weather App:</strong> A simple weather application built with Flutter that fetches weather data from an API and displays current weather information.
+                <a href="https://github.com/irshad800/weather-app" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                <strong>Grocery Selling App:</strong> A Flutter-based application for managing grocery sales, including cart management and product details.
+                <a href="https://github.com/irshad800/grocery-selling-app" target="_blank">View on GitHub</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="mailto:irshadvp800@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Muhammed Irshad VP. All rights reserved.</p>
+    <p>Connect with me:</p>
+    <div class="social-links">
+        <a href="https://github.com/irshad800" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammed-irshad-vp-0a9648247" target="_blank">LinkedIn</a>
+    </div>
+</footer>
+
+</body>
+</html>
