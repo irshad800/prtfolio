@@ -28,6 +28,7 @@
             padding: 60px 0;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         header h1 {
@@ -40,8 +41,24 @@
 
         header p {
             font-size: 1.4rem;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             text-shadow: 1px 1px #27ae60;
+        }
+
+        /* Profile Photo Styling */
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(2);
         }
 
         /* Main Content */
@@ -229,7 +246,7 @@
     <h1>Muhammed Irshad VP</h1>
     <p>Flutter Developer | Full-Stack Developer</p>
     <!-- Add profile photo -->
-    <img src="assets/images/irs coat.jpg" alt="Muhammed Irshad VP" class="profile-photo">
+    <img src="assets\images\irs coat1.jpg" alt="Muhammed Irshad VP" class="profile-photo">
 </header>
 
 <div class="container">
@@ -260,59 +277,56 @@
             <li>PROVIDER & BLoC</li>
             <li>UI/UX</li>
             <li>OOPS</li>
-            <li>HTML &  CSS</li>
+            <li>HTML & CSS</li>
             <li>ANDROID & IOS</li>
             <li>MongoDB</li>
             <li>SQL</li>
             <li>SQFLITE</li>
             <li>JavaScript</li>
-
             <li>MVVM & MVC Architecture</li>
             <li>GIT</li>
         </ul>
     </section>
+ <!-- Projects Section -->
+ <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <strong>Grocery Selling App:</strong> A Flutter-based application for managing grocery sales, including cart management and product details.
+            <a href="https://github.com/irshad800/Aspen_shoes" target="_blank">View on GitHub</a>
+        </li>
+        <li>
+            <strong>Shoe-Selling eCommerce App:</strong> A Flutter app using MVVM architecture for user and staff functionalities, including product browsing, cart management, and order processing.
+            <a href="https://github.com/irshad800/Groccery_selling_App" target="_blank">View on GitHub</a>
+        </li>
+        <li>
+            <strong>Optical Store Management System:</strong> A full-stack app built using Flutter, MongoDB, and Node.js. It manages prescriptions and products for users and staff.
+            <a href="https://github.com/irshad800/Optical_Store_Management_System" target="_blank">View on GitHub</a>
+        </li>
+        <li>
+            <strong>Task App:</strong> Task management app uses MVC architecture.- Utilizes BLoC for state management.- Incorporates hydrated_bloc for state persistence.- Includes local storage using path_provider.- Enhances UI with CupertinoIcons and FlutterLocalNotifications
+            <a href="https://github.com/irshad800/todoAPP" target="_blank">View on GitHub</a>
+        </li>
+        <li>
+            <strong>Ayurvedic Patient Management App:</strong> A Flutter-based app for managing patients and treatments, with API integration and PDF generation of patient details.
+            <a href="https://github.com/irshad800/Ayurvedha-Center-Patients" target="_blank">View on GitHub</a>
+        </li>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Grocery Selling App:</strong> A Flutter-based application for managing grocery sales, including cart management and product details.
-                <a href="https://github.com/irshad800/Aspen_shoes" target="_blank">View on GitHub</a>
-            </li>
-            <li>
-                <strong>Shoe-Selling eCommerce App:</strong> A Flutter app using MVVM architecture for user and staff functionalities, including product browsing, cart management, and order processing.
-                <a href="https://github.com/irshad800/Groccery_selling_App" target="_blank">View on GitHub</a>
-            </li>
-            <li>
-                <strong>Optical Store Management System:</strong> A full-stack app built using Flutter, MongoDB, and Node.js. It manages prescriptions and products for users and staff.
-                <a href="https://github.com/irshad800/Optical_Store_Management_System" target="_blank">View on GitHub</a>
-            </li>
-            <li>
-                <strong>Task App:</strong> Task management app uses MVC architecture.- Utilizes BLoC for state management.- Incorporates hydrated_bloc for state persistence.- Includes local storage using path_provider.- Enhances UI with CupertinoIcons and FlutterLocalNotifications
-                <a href="https://github.com/irshad800/todoAPP" target="_blank">View on GitHub</a>
-            </li>
-            <li>
-                <strong>Ayurvedic Patient Management App:</strong> A Flutter-based app for managing patients and treatments, with API integration and PDF generation of patient details.
-                <a href="https://github.com/irshad800/Ayurvedha-Center-Patients" target="_blank">View on GitHub</a>
-            </li>
-
-            <li>
-                <strong>Offline Alarm App:</strong> A Flutter app with location-based weather updates and local notifications, featuring offline functionality and data persistence with SQfLite.
-                <a href="https://github.com/irshad800/alarm-weather" target="_blank">View on GitHub</a>
-            </li>
+        <li>
+            <strong>Offline Alarm App:</strong> A Flutter app with location-based weather updates and local notifications, featuring offline functionality and data persistence with SQfLite.
+            <a href="https://github.com/irshad800/alarm-weather" target="_blank">View on GitHub</a>
+        </li>
 
 
-        </ul>
-    </section>
-
+    </ul>
+</section>
     <!-- Contact Form Section -->
     <section class="contact-form">
         <h2>Contact Me</h2>
-        <form action="mailto:irshadvp800@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="6" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
@@ -320,12 +334,13 @@
 
 <!-- Footer Section -->
 <footer>
-    <p>&copy; 2024 Muhammed Irshad VP. All rights reserved.</p>
-    <p>Connect with me:</p>
-    <div class="social-links">
-        <a href="https://github.com/irshad800" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/muhammed-irshad-vp-0a9648247" target="_blank">LinkedIn</a>
-    </div>
+    <p>&copy; 2024 Muhammed Irshad VP. All Rights Reserved.</p>
+    <p>Follow me on:
+        <span class="social-links">
+            <a href="https://github.com/irshad800" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/muhammed-irshad-vp-0a9648247" target="_blank">LinkedIn</a>
+        </span>
+    </p>
 </footer>
 
 </body>
