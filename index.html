@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammed Irshad VP - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Reset and Basic Styles */
         * {
@@ -115,27 +116,32 @@
         }
 
         /* Skills Section */
+        .skills {
+            padding: 20px; /* Adjust padding as needed */
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+
         .skills ul {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             list-style: none;
-            margin-top: 20px;
+            margin-top: 10px; /* Adjust margin as needed */
         }
 
         .skills ul li {
             background: #2ecc71;
             color: #fff;
-            padding: 15px 25px;
+            padding: 10px 20px; /* Adjust padding as needed */
             border-radius: 10px;
-            margin: 10px;
-            font-size: 1.1rem;
+            margin: 5px; /* Adjust margin as needed */
+            font-size: 1rem; /* Adjust font size as needed */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, background-color 0.3s;
         }
 
         .skills ul li:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px); /* Adjust hover effect as needed */
             background-color: #27ae60;
         }
 
@@ -230,13 +236,17 @@
         footer .social-links a {
             color: white;
             margin: 0 15px;
-            font-size: 1.3rem;
+            font-size: 1.5rem; /* Adjust size as needed */
             text-decoration: none;
             transition: color 0.3s;
         }
 
         footer .social-links a:hover {
             color: #2ecc71;
+        }
+
+        footer .social-links i {
+            margin-right: 8px;
         }
     </style>
 </head>
@@ -246,7 +256,7 @@
     <h1>Muhammed Irshad VP</h1>
     <p>Flutter Developer | Full-Stack Developer</p>
     <!-- Add profile photo -->
-    <img src="assets\images\irs coat1.jpg" alt="Muhammed Irshad VP" class="profile-photo">
+    <img src="assets/images/irs coat1.jpg" alt="Muhammed Irshad VP" class="profile-photo">
 </header>
 
 <div class="container">
@@ -264,69 +274,71 @@
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/muhammed-irshad-vp-0a9648247" target="_blank">Muhammed Irshad on LinkedIn</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/irshad800" target="_blank">irshad800 on GitHub</a></p>
     </section>
-
-    <!-- Skills Section -->
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Dart</li>
-            <li>Flutter</li>
-            <li>Node.js</li>
-            <li>Firebase</li>
-            <li>REST API</li>
-            <li>PROVIDER & BLoC</li>
-            <li>UI/UX</li>
-            <li>OOPS</li>
-            <li>HTML & CSS</li>
-            <li>ANDROID & IOS</li>
-            <li>MongoDB</li>
-            <li>SQL</li>
-            <li>SQFLITE</li>
-            <li>JavaScript</li>
-            <li>MVVM & MVC Architecture</li>
-            <li>GIT</li>
-        </ul>
-    </section>
- <!-- Projects Section -->
- <section class="projects">
-    <h2>Projects</h2>
+<!-- Skills Section -->
+<section class="skills">
+    <h2>Skills</h2>
     <ul>
-        <li>
-            <strong>Grocery Selling App:</strong> A Flutter-based application for managing grocery sales, including cart management and product details.
-            <a href="https://github.com/irshad800/Aspen_shoes" target="_blank">View on GitHub</a>
-        </li>
-        <li>
-            <strong>Shoe-Selling eCommerce App:</strong> A Flutter app using MVVM architecture for user and staff functionalities, including product browsing, cart management, and order processing.
-            <a href="https://github.com/irshad800/Groccery_selling_App" target="_blank">View on GitHub</a>
-        </li>
-        <li>
-            <strong>Optical Store Management System:</strong> A full-stack app built using Flutter, MongoDB, and Node.js. It manages prescriptions and products for users and staff.
-            <a href="https://github.com/irshad800/Optical_Store_Management_System" target="_blank">View on GitHub</a>
-        </li>
-        <li>
-            <strong>Task App:</strong> Task management app uses MVC architecture.- Utilizes BLoC for state management.- Incorporates hydrated_bloc for state persistence.- Includes local storage using path_provider.- Enhances UI with CupertinoIcons and FlutterLocalNotifications
-            <a href="https://github.com/irshad800/todoAPP" target="_blank">View on GitHub</a>
-        </li>
-        <li>
-            <strong>Ayurvedic Patient Management App:</strong> A Flutter-based app for managing patients and treatments, with API integration and PDF generation of patient details.
-            <a href="https://github.com/irshad800/Ayurvedha-Center-Patients" target="_blank">View on GitHub</a>
-        </li>
+        <li>Dart</li>
+        <li>Flutter</li>
+        <li>Node.js</li>
+        <li>Firebase</li>
+        <li>REST API</li>
+        <li>PROVIDER & BLoC</li>
+        <li>UI/UX</li>
+        <li>OOPS</li>
+        <li>HTML &  CSS</li>
+        <li>ANDROID & IOS</li>
+        <li>MongoDB</li>
+        <li>SQL</li>
+        <li>SQFLITE</li>
 
-        <li>
-            <strong>Offline Alarm App:</strong> A Flutter app with location-based weather updates and local notifications, featuring offline functionality and data persistence with SQfLite.
-            <a href="https://github.com/irshad800/alarm-weather" target="_blank">View on GitHub</a>
-        </li>
-
-
+        <li>MVVM & MVC Architecture</li>
+        <li>GIT</li>
     </ul>
 </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Grocery Selling App:</strong> A Flutter-based application for managing grocery sales, including cart management and product details.
+                <a href="https://github.com/irshad800/Aspen_shoes" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                <strong>Shoe-Selling eCommerce App:</strong> A Flutter app using MVVM architecture for user and staff functionalities, including product browsing, cart management, and order processing.
+                <a href="https://github.com/irshad800/Groccery_selling_App" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                <strong>Optical Store Management System:</strong> A full-stack app built using Flutter, MongoDB, and Node.js. It manages prescriptions and products for users and staff.
+                <a href="https://github.com/irshad800/Optical_Store_Management_System" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                <strong>Task App:</strong> Task management app uses MVC architecture.- Utilizes BLoC for state management.- Incorporates hydrated_bloc for state persistence.- Includes local storage using path_provider.- Enhances UI with CupertinoIcons and FlutterLocalNotifications
+                <a href="https://github.com/irshad800/todoAPP" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                <strong>Ayurvedic Patient Management App:</strong> A Flutter-based app for managing patients and treatments, with API integration and PDF generation of patient details.
+                <a href="https://github.com/irshad800/Ayurvedha-Center-Patients" target="_blank">View on GitHub</a>
+            </li>
+
+            <li>
+                <strong>Offline Alarm App:</strong> A Flutter app with location-based weather updates and local notifications, featuring offline functionality and data persistence with SQfLite.
+                <a href="https://github.com/irshad800/alarm-weather" target="_blank">View on GitHub</a>
+            </li>
+
+
+        </ul>
+    </section>
+
+
     <!-- Contact Form Section -->
     <section class="contact-form">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="6" required></textarea>
+        <form action="mailto:irshadvp800@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
@@ -334,14 +346,23 @@
 
 <!-- Footer Section -->
 <footer>
-    <p>&copy; 2024 Muhammed Irshad VP. All Rights Reserved.</p>
-    <p>Follow me on:
-        <span class="social-links">
-            <a href="https://github.com/irshad800" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/muhammed-irshad-vp-0a9648247" target="_blank">LinkedIn</a>
-        </span>
-    </p>
+    <p>© 2024 Muhammed Irshad VP. All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://github.com/irshad800" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammed-irshad-vp-0a9648247" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/ir_sha_d_?igsh=MTJzanc3c3FkOXkxZA==" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/share/6o25tQrFGZ9M4kYa/?mibextid=qi2Omg" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    </div>
 </footer>
+
 
 </body>
 </html>
