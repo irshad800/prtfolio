@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,6 +63,27 @@
             transform: scale(2);
         }
 
+        /* Navigation Links Below Picture */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #2ecc71;
+        }
+
         /* Main Content */
         .container {
             max-width: 1200px;
@@ -117,8 +139,8 @@
 
         /* Skills Section */
         .skills {
-            padding: 20px; /* Adjust padding as needed */
-            margin-top: 20px; /* Adjust margin as needed */
+            padding: 20px;
+            margin-top: 20px;
         }
 
         .skills ul {
@@ -126,22 +148,22 @@
             justify-content: space-around;
             flex-wrap: wrap;
             list-style: none;
-            margin-top: 10px; /* Adjust margin as needed */
+            margin-top: 10px;
         }
 
         .skills ul li {
             background: #2ecc71;
             color: #fff;
-            padding: 10px 20px; /* Adjust padding as needed */
+            padding: 10px 20px;
             border-radius: 10px;
-            margin: 5px; /* Adjust margin as needed */
-            font-size: 1rem; /* Adjust font size as needed */
+            margin: 5px;
+            font-size: 1rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, background-color 0.3s;
         }
 
         .skills ul li:hover {
-            transform: translateY(-8px); /* Adjust hover effect as needed */
+            transform: translateY(-8px);
             background-color: #27ae60;
         }
 
@@ -236,7 +258,7 @@
         footer .social-links a {
             color: white;
             margin: 0 15px;
-            font-size: 1.5rem; /* Adjust size as needed */
+            font-size: 1.5rem;
             text-decoration: none;
             transition: color 0.3s;
         }
@@ -257,48 +279,48 @@
     <p>Flutter Developer | Full-Stack Developer</p>
     <!-- Add profile photo -->
     <img src="assets/images/irs coat1.jpg" alt="Muhammed Irshad VP" class="profile-photo">
+
+    <!-- Navigation Links Below Profile Picture -->
+    <div class="nav-links">
+        <a href="#about-section">About</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#contact-section">Contact</a>
+    </div>
 </header>
 
 <div class="container">
     <!-- About Me Section -->
-    <section class="about">
+    <section class="about" id="about-section">
         <h2>About Me</h2>
         <p>Motivated Flutter Developer with expertise in state management, Dart, UI/UX design, REST API integration, Firebase, and Node.js. I have completed multiple cross-platform projects, holding an MCA degree and excelling in problem-solving. Eager to contribute to dynamic teams and grow as a developer.</p>
     </section>
 
-    <!-- Contact Information Section -->
-    <section class="contact-info">
-        <h2>Contact Information</h2>
-        <p><strong>Phone:</strong> +91 9072130225</p>
-        <p><strong>Email:</strong> <a href="mailto:irshadvp800@gmail.com">irshadvp800@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/muhammed-irshad-vp-0a9648247" target="_blank">Muhammed Irshad on LinkedIn</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/irshad800" target="_blank">irshad800 on GitHub</a></p>
+    <!-- Skills Section -->
+    <section class="skills" id="skills-section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Dart</li>
+            <li>Flutter</li>
+            <li>Node.js</li>
+            <li>Firebase</li>
+            <li>REST API</li>
+            <li>PROVIDER & BLoC</li>
+            <li>UI/UX</li>
+            <li>OOPS</li>
+            <li>HTML &  CSS</li>
+            <li>ANDROID & IOS</li>
+            <li>MongoDB</li>
+            <li>SQL</li>
+            <li>SQFLITE</li>
+    
+            <li>MVVM & MVC Architecture</li>
+            <li>GIT</li>
+        </ul>
     </section>
-<!-- Skills Section -->
-<section class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Dart</li>
-        <li>Flutter</li>
-        <li>Node.js</li>
-        <li>Firebase</li>
-        <li>REST API</li>
-        <li>PROVIDER & BLoC</li>
-        <li>UI/UX</li>
-        <li>OOPS</li>
-        <li>HTML &  CSS</li>
-        <li>ANDROID & IOS</li>
-        <li>MongoDB</li>
-        <li>SQL</li>
-        <li>SQFLITE</li>
-
-        <li>MVVM & MVC Architecture</li>
-        <li>GIT</li>
-    </ul>
-</section>
 
     <!-- Projects Section -->
-    <section class="projects">
+    <section class="projects" id="projects-section">
         <h2>Projects</h2>
         <ul>
             <li>
@@ -330,12 +352,10 @@
 
         </ul>
     </section>
-
-
-    <!-- Contact Form Section -->
-    <section class="contact-form">
+    <!-- Contact Section -->
+    <section class="contact-form" id="contact-section">
         <h2>Contact Me</h2>
-        <form action="mailto:irshadvp800@gmail.com" method="post" enctype="text/plain">
+        <form>
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -343,6 +363,7 @@
         </form>
     </section>
 </div>
+
 
 <!-- Footer Section -->
 <footer>
@@ -362,7 +383,6 @@
         </a>
     </div>
 </footer>
-
 
 </body>
 </html>
